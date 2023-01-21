@@ -93,6 +93,6 @@ function naanDough() {
 const button = document.getElementById("flip-card");
 const card = document.querySelector(".card");
 
-button.addEventListener("click", function () {
+button.addEventListener("touchstart", function () {
   card.classList.toggle("flipped");
 });
