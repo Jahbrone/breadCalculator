@@ -66,3 +66,24 @@ function chapatiDough() {
   chapatiDoughWater.innerText = `Water: ${Math.floor(chapatiWater)}ml`;
   chapatiDoughSalt.innerText = `Salt: ${Math.round(chapatiSalt * 10) / 10}g`;
 }
+
+//-----------Naan-Dough---------------------------//
+
+const naanAmount = document.getElementById("naanInput");
+const naanDoughFlour = document.getElementById("naanFlour");
+const naanDoughWater = document.getElementById("naanWater");
+const naanDoughYogurt = document.getElementById("naanYogurt");
+const naanDoughSalt = document.getElementById("naanSalt");
+function naanDough() {
+  //
+  //
+  let naanFlour = naanAmount.value * 34;
+  let naanWater = naanAmount.value * 18;
+  let naanYogurt = naanAmount.value * 9;
+  let naanSalt = (2.5 / 100) * naanFlour;
+
+  naanDoughFlour.innerText = `Flour: ${Math.floor(naanFlour)}g`;
+  naanDoughWater.innerText = `Water: ${Math.floor(naanWater)}ml`;
+  naanDoughYogurt.innerText = `Water: ${Math.floor(naanYogurt)}g`;
+  naanDoughSalt.innerText = `Salt: ${Math.round(naanSalt * 10) / 10}g`;
+}
