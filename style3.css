@@ -6,10 +6,12 @@
 }
 body {
   background-color: antiquewhite;
-  height: 100vh;
+}
+.front-page {
+  height: 90vh;
 }
 .card-container {
-  perspective: 1200px;
+  perspective: 1000px;
 }
 
 /* front page */
@@ -35,11 +37,16 @@ body {
 .copyright {
   font-size: 0.7rem;
 }
+.front-page {
+}
+.main {
+  height: 80%;
+}
 .link-container {
-  height: 60%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .link-btn {
   text-align: center;
@@ -73,6 +80,7 @@ body {
 }
 
 /* Main container, front and back. */
+
 .card {
   position: relative;
   padding: 1rem;
@@ -121,11 +129,15 @@ button {
   padding: 0 0.5rem;
   font-size: 15px;
 }
+.image-front,
 .image {
   position: absolute;
   width: 100%;
   bottom: 10px;
   display: flex;
+  justify-content: space-between;
+}
+.image-front {
   justify-content: space-around;
 }
 
