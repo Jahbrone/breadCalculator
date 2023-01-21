@@ -84,6 +84,15 @@ function naanDough() {
 
   naanDoughFlour.innerText = `Flour: ${Math.floor(naanFlour)}g`;
   naanDoughWater.innerText = `Water: ${Math.floor(naanWater)}ml`;
-  naanDoughYogurt.innerText = `Water: ${Math.floor(naanYogurt)}g`;
+  naanDoughYogurt.innerText = `Yogurt: ${Math.floor(naanYogurt)}g`;
   naanDoughSalt.innerText = `Salt: ${Math.round(naanSalt * 10) / 10}g`;
 }
+
+// CARD fippier
+
+const button = document.getElementById("flip-card");
+const card = document.querySelector(".card");
+
+button.addEventListener("click", function () {
+  card.classList.toggle("flipped");
+});

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,27 +12,58 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./img/icon1.png" />
-    <title>PIZZA</title>
+    <title>PIZZA3</title>
+    <link rel="stylesheet" href="style3.css" />
   </head>
   <body>
     <a class="home" href="index.html">HOME</a>
-    <div class="container">
-      <h2>Pizza</h2>
-      <p class="text">
-        Enter the flour weight in grams to find out how much water and salt you need. Roughly 150g of flour per pizza.
-      </p>
-      <label for="">Flour:</label>
-      <input type="number" name="pizzaInput" id="pizzaInput" />
-      <button id="btn" onclick="pizzaDough()">Calculate</button>
-      <p class="ingredients" id="pizzaWater">Water:</p>
-      <p class="ingredients" id="pizzaSalt">Salt</p>
-      <div class="image">
-        <img src="./img/pizza.png" width="50px" />
-        <img src="./img/pizza.png" width="50px" />
-        <img src="./img/pizza.png" width="50px" />
-        <img src="./img/pizza.png" width="50px" />
-        <img src="./img/pizza.png" width="50px" />
+    <!-- Main Container -->
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+          <h2>Pizza</h2>
+          <p class="text">
+            Enter the flour weight in grams to find out how much water and salt
+            you need. <br />
+            Roughly 150g of flour per pizza.
+          </p>
+          <label for="">Flour:</label>
+          <input type="number" name="pizzaInput" id="pizzaInput" />
+          <button id="btn" onclick="pizzaDough()">Calculate</button>
+          <p class="ingredients" id="pizzaWater">Water:</p>
+          <p class="ingredients" id="pizzaSalt">Salt:</p>
+          <div class="image">
+            <img src="./img/pizza.png" width="50px" />
+            <img src="./img/pizza.png" width="50px" />
+            <img src="./img/pizza.png" width="50px" />
+            <img src="./img/pizza.png" width="50px" />
+            <img src="./img/pizza.png" width="50px" />
+          </div>
+        </div>
+        <div class="back">
+          <h2>Directions</h2>
+          <p class="italics">Extra ingredients: Yeast, pizza toppings.</p>
+          <ul class="backp">
+            <li>
+              Mix ingredients together and knead to<br />
+              make dough.
+            </li>
+            <li>Cover and let rest until it doubles in size, or over night.</li>
+            <li>Divide into equal portions and roll into balls.</li>
+            <li>Rest again until it rises.</li>
+
+            <li>
+              Strech/roll/whatever each ball out flat and put on your toppings.
+            </li>
+            <li>
+              Cook 1 at a time at your oven's hottest temperature until ready.
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="bottom">
+      <button id="flip-card">Flip for instructions</button>
     </div>
     <!----------script ----------->
     <script src="app.js"></script>
