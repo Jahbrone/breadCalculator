@@ -154,8 +154,11 @@ button {
 }
 
 /* ------Back-------- */
+.back p {
+  margin: 2px 10px;
+}
 .italics {
-  font-size: 13px;
+  font-size: 12px;
   font-style: italic;
   margin: 0;
   font-weight: 400;
