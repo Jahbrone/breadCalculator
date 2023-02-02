@@ -90,9 +90,13 @@ function naanDough() {
 
 // CARD fippier
 
+// const buttonLg = document.getElementById("flip-card-lg");
 const button = document.getElementById("flip-card");
 const card = document.querySelector(".card");
 
-button.addEventListener("touchstart", function () {
+// button.addEventListener("touchstart", function () {
+//   card.classList.toggle("flipped");
+// });
+button.addEventListener("click", function () {
   card.classList.toggle("flipped");
 });

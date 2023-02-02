@@ -7,6 +7,15 @@
 body {
   background-color: antiquewhite;
 }
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1rem;
+}
 .front-page {
   height: 90vh;
 }
@@ -37,16 +46,16 @@ body {
 .copyright {
   font-size: 0.7rem;
 }
-.front-page {
-}
-.main {
+
+/* .main {
   height: 80%;
-}
+} */
 .link-container {
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 20%;
 }
 .link-btn {
   text-align: center;
@@ -78,6 +87,9 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.home-lg {
+  display: none;
+}
 
 /* Main container, front and back. */
 
@@ -94,12 +106,14 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .front {
   position: relative;
   height: 100%;
 }
 h1,
-h2 {
+h2,
+h3 {
   margin: 1rem;
   text-align: center;
 }
@@ -129,15 +143,13 @@ button {
   padding: 0 0.5rem;
   font-size: 15px;
 }
-.image-front,
-.image {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-}
+
 .image-front {
+  position: absolute;
+  padding: 0 2rem;
+  bottom: 2%;
+  width: 100%;
+  display: flex;
   justify-content: space-around;
 }
 
@@ -159,6 +171,7 @@ li {
 }
 
 /* flip button at the bottom */
+
 .bottom {
   background-color: #ecb235;
   margin: 0 1rem;
@@ -170,6 +183,7 @@ li {
   justify-content: center;
   text-align: center;
 }
+
 #flip-card {
   background-color: #f0a33e;
   border: none;
@@ -209,4 +223,68 @@ li {
   background-color: #ebc57f;
   border-end-end-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+@media screen and (min-width: 821px) {
+  .main-container {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0.4rem;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    background-color: #ecb235;
+  }
+  .info {
+    position: absolute;
+    display: block;
+    margin-right: 10px;
+  }
+  .container {
+    height: 80vh;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  .card {
+    min-height: 600px;
+    margin: 0;
+  }
+  .bottom {
+    display: block;
+    margin: 0;
+  }
+  .card-container {
+    margin: auto;
+  }
+  .home {
+    display: none;
+  }
+  .home-lg {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid #000;
+    background-color: #ebc57f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .info-container {
+    border: 3px solid #000;
+    border-radius: 2rem;
+    height: 80vh;
+    min-height: 600px;
+    padding: 1rem;
+    background-color: #f8c567;
+  }
+  .info-page {
+    margin-top: 20vh;
+  }
 }
